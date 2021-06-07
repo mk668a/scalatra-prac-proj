@@ -7,6 +7,7 @@ lazy val hello = (project in file("."))
   .settings(
     name := "My Scalatra Web App",
     version := "0.1.0-SNAPSHOT",
+    scalacOptions ++= Seq("-deprecation", "-feature", "-unchecked", "-Xlint"),
     libraryDependencies ++= Seq(
       "org.scalatra" %% "scalatra" % ScalatraVersion,
       "org.scalatra" %% "scalatra-scalatest" % ScalatraVersion % "test",
